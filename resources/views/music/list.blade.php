@@ -26,8 +26,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3>{{$song['artist']}}</h3>
-                            <h4>{{$song['title']}}</h4>
+                            <h3>{{str_limit($song['artist'],35)}}</h3>
+                            <h4>{{str_limit($song['title'],50)}}</h4>
                         </div>
                         <div class="card-body">
                             <ul class="no-bullet inline">
@@ -45,8 +45,8 @@
                 <div class="col-md-3 mb-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3>{{$song['artist']}}</h3>
-                            <h4>{{$song['title']}}</h4>
+                            <h3>{{str_limit($song['artist'],15)}}</h3>
+                            <h4>{{str_limit($song['title'],17)}}</h4>
                         </div>
                         <div class="card-body">
                             <ul class="no-bullet inline">
