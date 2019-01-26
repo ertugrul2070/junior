@@ -19,8 +19,9 @@
             <h1>Top 10 hits of January 2019</h1>
         </div>
 
-        {{--set all songs in foreach to select specific song and if position is 1 or 2 set on top(bigger cards).--}}
+        {{--set all songs in foreach to select specific song.--}}
         @foreach($songs as $song)
+            {{--if position is 1 or 2 set on top(bigger cards).--}}
             @if($song['position'] == 1 || $song['position'] == 2)
                 <div class="col-md-6 mb-4">
                     <div class="card">
